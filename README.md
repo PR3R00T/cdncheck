@@ -27,6 +27,16 @@ cdncheck is a tool for identifying the technology associated with dns / ip netwo
 </b>
 </pre>
 
+## Custom Fixes
+
+IP address working for resolving hosts. Currently awaiting merge https://github.com/projectdiscovery/cdncheck/pull/317 
+```
+Azure IP addresses wasnt being mapped, to update:
+go to cmd/generate-index 
+run go run . 
+mv the source.json file to the root on the folder. 
+go to cmd/cdncheck and run go build and download the exe to add as the new release.
+```
 ![image](https://user-images.githubusercontent.com/8293321/234400462-9474a3b6-4f9f-443b-a5c7-15120d6cef5f.png)
 
 ## Features
